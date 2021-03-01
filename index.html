@@ -3,10 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>@iadvize-oss/opaque-type - v1.1.1</title>
-	<meta name="description" content="Documentation for @iadvize-oss/opaque-type - v1.1.1">
+	<title>@fp51/opaque-type - v0.0.0</title>
+	<meta name="description" content="Documentation for @fp51/opaque-type - v0.0.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
 </head>
 <body>
 <header>
@@ -22,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">@iadvize-oss/opaque-type - v1.1.1</a>
+					<a href="index.html" class="title">@fp51/opaque-type - v0.0.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -40,8 +41,6 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
-							<input type="checkbox" id="tsd-filter-only-exported" />
-							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,12 +50,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<ul class="tsd-breadcrumb">
-				<li>
-					<a href="globals.html">Globals</a>
-				</li>
-			</ul>
-			<h1>@iadvize-oss/opaque-type - v1.1.1</h1>
+			<h1>@fp51/opaque-type - v0.0.0</h1>
 		</div>
 	</div>
 </header>
@@ -64,16 +58,17 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<a href="#iadvizeopaque-types" id="iadvizeopaque-types" style="color: inherit; text-decoration: none;">
-					<h1>@iadvize/opaque-types</h1>
+				<a href="#fp51opaque-types" id="fp51opaque-types" style="color: inherit; text-decoration: none;">
+					<h1>@fp51/opaque-types</h1>
 				</a>
-				<p><img src="https://github.com/iadvize/opaque-type-library/workflows/Continuous%20integration/badge.svg" alt="Continuous integration"></p>
+				<p><img src="https://github.com/fp51/opaque-type-library/workflows/Continuous%20integration/badge.svg" alt="Continuous integration"></p>
 				<p>Inspired from <a href="https://codemix.com/opaque-types-in-javascript/">https://codemix.com/opaque-types-in-javascript/</a></p>
 				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
 					<h1>Usage</h1>
 				</a>
-				<pre><code>npm <span class="hljs-keyword">add</span> <span class="hljs-title">@iadvize-oss</span>/<span class="hljs-keyword">opaque</span>-<span class="hljs-keyword">type</span></code></pre>
-				<p><a href="https://iadvize.github.io/opaque-type-library/">📖 Documentation</a></p>
+				<pre><code><span style="color: #001080">npm</span><span style="color: #000000"> </span><span style="color: #001080">add</span><span style="color: #000000"> @</span><span style="color: #001080">fp51</span><span style="color: #000000">/</span><span style="color: #001080">opaque</span><span style="color: #000000">-</span><span style="color: #001080">type</span>
+</code></pre>
+				<p><a href="https://fp51.github.io/opaque-type-library/">📖 Documentation</a></p>
 				<a href="#why-" id="why-" style="color: inherit; text-decoration: none;">
 					<h1>Why ?</h1>
 				</a>
@@ -82,67 +77,73 @@
 				</a>
 				<p>The following naive code will compile properly, except that if you mix
 				<code>createRoom</code> parameters you will introduce a nasty bug at runtime.</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">type</span> RoomID = <span class="hljs-built_in">string</span>;
-<span class="hljs-keyword">type</span> UserID = <span class="hljs-built_in">string</span>;
+				<pre><code class="language-typescript"><span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">RoomID</span><span style="color: #000000"> = </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">UserID</span><span style="color: #000000"> = </span><span style="color: #267F99">string</span><span style="color: #000000">;</span>
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createRoom</span>(<span class="hljs-params">roomId: RoomID, userId: UserID</span>) </span>{
-  <span class="hljs-comment">// something</span>
-}
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">createRoom</span><span style="color: #000000">(</span><span style="color: #001080">roomId</span><span style="color: #000000">: </span><span style="color: #267F99">RoomID</span><span style="color: #000000">, </span><span style="color: #001080">userId</span><span style="color: #000000">: </span><span style="color: #267F99">UserID</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// something</span>
+<span style="color: #000000">}</span>
 
-<span class="hljs-keyword">const</span> roomId: RoomID = ...;
-<span class="hljs-keyword">const</span> userId: UserID = ...;
-createRoom(userId, roomId);</code></pre>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">roomId</span><span style="color: #000000">: </span><span style="color: #267F99">RoomID</span><span style="color: #000000"> = ...;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">userId</span><span style="color: #000000">: </span><span style="color: #267F99">UserID</span><span style="color: #000000"> = ...;</span>
+<span style="color: #795E26">createRoom</span><span style="color: #000000">(</span><span style="color: #001080">userId</span><span style="color: #000000">, </span><span style="color: #001080">roomId</span><span style="color: #000000">);</span>
+</code></pre>
 				<p>Opaque at rescue !</p>
 				<p>This following code won&#39;t compile, because <code>Opaque</code> add more specificty to
 					<code>RoomId</code> and <code>UserId</code>, so typescript wont think they are compatible because they
 				are built uppon a <code>string</code>;</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { Opaque } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;@iadvize-oss/opaque-type&quot;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">Opaque</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&quot;@fp51/opaque-type&quot;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">type</span> RoomID = Opaque&lt;<span class="hljs-string">&quot;RoomId&quot;</span>&gt;;
-<span class="hljs-keyword">type</span> UserID = Opaque&lt;<span class="hljs-string">&quot;UserId&quot;</span>&gt;;
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">RoomID</span><span style="color: #000000"> = </span><span style="color: #267F99">Opaque</span><span style="color: #000000">&lt;</span><span style="color: #A31515">&quot;RoomId&quot;</span><span style="color: #000000">&gt;;</span>
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">UserID</span><span style="color: #000000"> = </span><span style="color: #267F99">Opaque</span><span style="color: #000000">&lt;</span><span style="color: #A31515">&quot;UserId&quot;</span><span style="color: #000000">&gt;;</span>
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createRoom</span>(<span class="hljs-params">roomId: RoomID, userId: UserID</span>) </span>{
-  <span class="hljs-comment">// something</span>
-}
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">createRoom</span><span style="color: #000000">(</span><span style="color: #001080">roomId</span><span style="color: #000000">: </span><span style="color: #267F99">RoomID</span><span style="color: #000000">, </span><span style="color: #001080">userId</span><span style="color: #000000">: </span><span style="color: #267F99">UserID</span><span style="color: #000000">) {</span>
+<span style="color: #000000">  </span><span style="color: #008000">// something</span>
+<span style="color: #000000">}</span>
 
-<span class="hljs-keyword">const</span> roomId: RoomID = ...;
-<span class="hljs-keyword">const</span> userId: UserID = ...;
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">roomId</span><span style="color: #000000">: </span><span style="color: #267F99">RoomID</span><span style="color: #000000"> = ...;</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">userId</span><span style="color: #000000">: </span><span style="color: #267F99">UserID</span><span style="color: #000000"> = ...;</span>
 
-createRoom(userId, roomId); <span class="hljs-comment">// TypeError</span></code></pre>
+<span style="color: #795E26">createRoom</span><span style="color: #000000">(</span><span style="color: #001080">userId</span><span style="color: #000000">, </span><span style="color: #001080">roomId</span><span style="color: #000000">); </span><span style="color: #008000">// TypeError</span>
+</code></pre>
 				<p>Here the error message you will get in your editor or when you will try to build
 				your application</p>
-				<pre><code>Argument <span class="hljs-keyword">of</span> <span class="hljs-keyword">type</span> <span class="hljs-symbol">&#x27;Opaque</span>&lt;<span class="hljs-string">&quot;UserId&quot;</span>&gt;&#x27; <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> assignable <span class="hljs-keyword">to</span> <span class="hljs-keyword">parameter</span> <span class="hljs-keyword">of</span> <span class="hljs-keyword">type</span> <span class="hljs-symbol">&#x27;Opaque</span>&lt;<span class="hljs-string">&quot;RoomId&quot;</span>&gt;&#x27;.
-  ...</code></pre>
+				<pre><code><span style="color: #001080">Argument</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">type</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Opaque&lt;&quot;UserId&quot;&gt;&#039;</span><span style="color: #000000"> </span><span style="color: #001080">is</span><span style="color: #000000"> </span><span style="color: #001080">not</span><span style="color: #000000"> </span><span style="color: #001080">assignable</span><span style="color: #000000"> </span><span style="color: #001080">to</span><span style="color: #000000"> </span><span style="color: #001080">parameter</span><span style="color: #000000"> </span><span style="color: #0000FF">of</span><span style="color: #000000"> </span><span style="color: #001080">type</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Opaque&lt;&quot;RoomId&quot;&gt;&#039;</span><span style="color: #000000">.</span>
+<span style="color: #000000">  ...</span>
+</code></pre>
 				<a href="#type-opacification-hence-the-name" id="type-opacification-hence-the-name" style="color: inherit; text-decoration: none;">
 					<h2>Type opacification (hence the name)</h2>
 				</a>
 				<p>Let say you built a nice piece of code:</p>
-				<pre><code class="language-typescript"><span class="hljs-comment">// message.ts</span>
-<span class="hljs-keyword">type</span> Message = {
-  <span class="hljs-attr">userId</span>: <span class="hljs-built_in">string</span>,
-  <span class="hljs-attr">text</span>: <span class="hljs-built_in">string</span>,
-};
+				<pre><code class="language-typescript"><span style="color: #008000">// message.ts</span>
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">Message</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">  </span><span style="color: #001080">userId</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">text</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">,</span>
+<span style="color: #000000">};</span>
 
-<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clearMessageText</span>(<span class="hljs-params">message: Message</span>) : <span class="hljs-title">Message</span> </span>{
-  <span class="hljs-keyword">return</span> message.text = <span class="hljs-string">&#x27;&#x27;</span>;
-}
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">clearMessageText</span><span style="color: #000000">(</span><span style="color: #001080">message</span><span style="color: #000000">: </span><span style="color: #267F99">Message</span><span style="color: #000000">) : </span><span style="color: #267F99">Message</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">message</span><span style="color: #000000">.</span><span style="color: #001080">text</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
 
-<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getMessage</span>(<span class="hljs-params"></span>):<span class="hljs-title">Message</span> </span>{
-  <span class="hljs-keyword">return</span> ...
-}</code></pre>
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">getMessage</span><span style="color: #000000">():</span><span style="color: #267F99">Message</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> ...</span>
+<span style="color: #000000">}</span>
+</code></pre>
 				<p>You user can endup writting the following code:</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { clearMessageText, getMessage } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;./message&#x27;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">clearMessageText</span><span style="color: #000000">, </span><span style="color: #001080">getMessage</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;./message&#039;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> message = { <span class="hljs-attr">userId</span>: <span class="hljs-string">&#x27;userId&#x27;</span>, <span class="hljs-attr">text</span>: <span class="hljs-string">&#x27;mytext&#x27;</span> };
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">message</span><span style="color: #000000"> = { </span><span style="color: #001080">userId:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;userId&#039;</span><span style="color: #000000">, </span><span style="color: #001080">text:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;mytext&#039;</span><span style="color: #000000"> };</span>
 
-clearMessageText(message); 
+<span style="color: #795E26">clearMessageText</span><span style="color: #000000">(</span><span style="color: #001080">message</span><span style="color: #000000">); </span>
+
 </code></pre>
 				<p>or</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { getMessage } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;..&#x27;</span>
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getMessage</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;..&#039;</span>
 
-<span class="hljs-keyword">const</span> message2 = getMessage();
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">message2</span><span style="color: #000000"> = </span><span style="color: #795E26">getMessage</span><span style="color: #000000">();</span>
 
-message2.userId = <span class="hljs-string">&#x27;whatever&#x27;</span>;</code></pre>
+<span style="color: #001080">message2</span><span style="color: #000000">.</span><span style="color: #001080">userId</span><span style="color: #000000"> = </span><span style="color: #A31515">&#039;whatever&#039;</span><span style="color: #000000">;</span>
+</code></pre>
 				<p>Those two pieces of code are problematic, because in these the inner structure
 				of your types are exposed and manipulated.</p>
 				<p>If you make any change to the <code>Message</code> structure it will be a breaking change
@@ -150,40 +151,42 @@ message2.userId = <span class="hljs-string">&#x27;whatever&#x27;</span>;</code><
 				of line of code.</p>
 				<p>How can we avoid this protecting our user from creating a code strongly tied to
 				your library internals ?</p>
-				<pre><code class="language-typescript"><span class="hljs-comment">// message.ts</span>
-<span class="hljs-keyword">import</span> { createOpaqueAPI } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../index&#x27;</span>;
+				<pre><code class="language-typescript"><span style="color: #008000">// message.ts</span>
+<span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">createOpaqueAPI</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;../index&#039;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">type</span> $Message = {
-  <span class="hljs-attr">userId</span>: <span class="hljs-built_in">string</span>,
-  <span class="hljs-attr">text</span>: <span class="hljs-built_in">string</span>,
-};
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">$Message</span><span style="color: #000000"> = {</span>
+<span style="color: #000000">  </span><span style="color: #001080">userId</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">text</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">,</span>
+<span style="color: #000000">};</span>
 
-<span class="hljs-keyword">const</span> { toOpaque, fromOpaque } = createOpaqueAPI&lt;
-  <span class="hljs-string">&#x27;Message&#x27;</span>,
-  $Message,
-&gt;(<span class="hljs-string">&#x27;Message&#x27;</span>);
+<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">toOpaque</span><span style="color: #000000">, </span><span style="color: #0070C1">fromOpaque</span><span style="color: #000000"> } = </span><span style="color: #001080">createOpaqueAPI</span><span style="color: #000000">&lt;</span>
+<span style="color: #000000">  </span><span style="color: #A31515">&#039;Message&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  </span><span style="color: #001080">$Message</span><span style="color: #000000">,</span>
+<span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;Message&#039;</span><span style="color: #000000">);</span>
 
-<span class="hljs-keyword">type</span> Message = ReturnType&lt;<span class="hljs-keyword">typeof</span> toOpaque&gt;;
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">Message</span><span style="color: #000000"> = </span><span style="color: #267F99">ReturnType</span><span style="color: #000000">&lt;</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">toOpaque</span><span style="color: #000000">&gt;;</span>
 
-<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getMessage</span>(<span class="hljs-params"></span>): <span class="hljs-title">Message</span> </span>{
-  <span class="hljs-keyword">return</span> toOpaque({ <span class="hljs-attr">userId</span>: <span class="hljs-string">&#x27;userId&#x27;</span>, <span class="hljs-attr">text</span>: <span class="hljs-string">&#x27;text&#x27;</span> });
-}
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">getMessage</span><span style="color: #000000">(): </span><span style="color: #267F99">Message</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">toOpaque</span><span style="color: #000000">({ </span><span style="color: #001080">userId:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;userId&#039;</span><span style="color: #000000">, </span><span style="color: #001080">text:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;text&#039;</span><span style="color: #000000"> });</span>
+<span style="color: #000000">}</span>
 
-<span class="hljs-keyword">export</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">clearMessageText</span>(<span class="hljs-params">message: Message</span>): <span class="hljs-title">Message</span> </span>{
-  <span class="hljs-keyword">const</span> $message = fromOpaque(message)
+<span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">clearMessageText</span><span style="color: #000000">(</span><span style="color: #001080">message</span><span style="color: #000000">: </span><span style="color: #267F99">Message</span><span style="color: #000000">): </span><span style="color: #267F99">Message</span><span style="color: #000000"> {</span>
+<span style="color: #000000">  </span><span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">$message</span><span style="color: #000000"> = </span><span style="color: #795E26">fromOpaque</span><span style="color: #000000">(</span><span style="color: #001080">message</span><span style="color: #000000">)</span>
 
-  <span class="hljs-keyword">return</span> toOpaque({
-    ...$message,
-    <span class="hljs-attr">text</span>: <span class="hljs-string">&#x27;&#x27;</span>,
-  });
-}</code></pre>
+<span style="color: #000000">  </span><span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">toOpaque</span><span style="color: #000000">({</span>
+<span style="color: #000000">    ...</span><span style="color: #001080">$message</span><span style="color: #000000">,</span>
+<span style="color: #000000">    </span><span style="color: #001080">text:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;&#039;</span><span style="color: #000000">,</span>
+<span style="color: #000000">  });</span>
+<span style="color: #000000">}</span>
+</code></pre>
 				<p>Your user won&#39;t be able to write code in same fashion, he will have to ignore
 				the internals of your code.</p>
-				<pre><code class="language-typescript"><span class="hljs-keyword">import</span> { getMessage, clearMessageText } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../index&#x27;</span>;
+				<pre><code class="language-typescript"><span style="color: #AF00DB">import</span><span style="color: #000000"> { </span><span style="color: #001080">getMessage</span><span style="color: #000000">, </span><span style="color: #001080">clearMessageText</span><span style="color: #000000"> } </span><span style="color: #AF00DB">from</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;../index&#039;</span><span style="color: #000000">;</span>
 
-<span class="hljs-keyword">const</span> message = getMessage();
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">message</span><span style="color: #000000"> = </span><span style="color: #795E26">getMessage</span><span style="color: #000000">();</span>
 
-<span class="hljs-keyword">const</span> messageCleared = clearMessageText(message); </code></pre>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">messageCleared</span><span style="color: #000000"> = </span><span style="color: #795E26">clearMessageText</span><span style="color: #000000">(</span><span style="color: #001080">message</span><span style="color: #000000">); </span>
+</code></pre>
 				<p>This is especially usefull when creating a reusable a library:</p>
 				<ul>
 					<li>It does protect the user of your code from himself</li>
@@ -195,16 +198,22 @@ message2.userId = <span class="hljs-string">&#x27;whatever&#x27;</span>;</code><
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
-					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/_src_index_.html">&quot;src/index&quot;</a>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#opaque" class="tsd-kind-icon">Opaque</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="modules.html#opaqueapi" class="tsd-kind-icon">Opaque<wbr>Api</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="modules.html#createopaqueapi" class="tsd-kind-icon">create<wbr>OpaqueAPI</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -214,10 +223,6 @@ message2.userId = <span class="hljs-string">&#x27;whatever&#x27;</span>;</code><
 	<div class="container">
 		<h2>Legend</h2>
 		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
-				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
-			</ul>
 		</div>
 	</div>
 </footer>
