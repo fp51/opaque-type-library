@@ -1,6 +1,6 @@
-@iadvize/opaque-types
+@fp51/opaque-types
 ====================
-![Continuous integration](https://github.com/iadvize/opaque-type-library/workflows/Continuous%20integration/badge.svg)
+![Continuous integration](https://github.com/fp51/opaque-type-library/workflows/Continuous%20integration/badge.svg)
 
 
 Inspired from https://codemix.com/opaque-types-in-javascript/
@@ -8,10 +8,10 @@ Inspired from https://codemix.com/opaque-types-in-javascript/
 # Usage
 
 ```
-npm add @iadvize-oss/opaque-type
+npm add @fp51/opaque-type
 ```
 
-[📖 Documentation](https://iadvize.github.io/opaque-type-library/)
+[📖 Documentation](https://fp51.github.io/opaque-type-library/)
 
 # Why ? 
 
@@ -40,7 +40,7 @@ This following code won't compile, because `Opaque` add more specificty to
 are built uppon a `string`;
 
 ```typescript
-import { Opaque } from "@iadvize-oss/opaque-type";
+import { Opaque } from "@fp51/opaque-type";
 
 type RoomID = Opaque<"RoomId">;
 type UserID = Opaque<"UserId">;
