@@ -64,14 +64,14 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#opaque" class="tsd-kind-icon">Opaque</a></li>
-								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#opaqueapi" class="tsd-kind-icon">Opaque<wbr>Api</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#Opaque" class="tsd-kind-icon">Opaque</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="modules.html#OpaqueApi" class="tsd-kind-icon">Opaque<wbr>Api</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#createopaqueapi" class="tsd-kind-icon">create<wbr>OpaqueAPI</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="modules.html#createOpaqueAPI" class="tsd-kind-icon">create<wbr>OpaqueAPI</a></li>
 							</ul>
 						</section>
 					</div>
@@ -80,12 +80,12 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
-					<a name="opaque" class="tsd-anchor"></a>
+					<a name="Opaque" class="tsd-anchor"></a>
 					<h3>Opaque</h3>
 					<div class="tsd-signature tsd-kind-icon">Opaque&lt;Key&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>__OPAQUE_KEY__<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">; </span>__OPAQUE__<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;__OPAQUE__&quot;</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/9ba7d1a/src/index.ts#L4">index.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/25d205f/src/index.ts#L4">index.ts:4</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -139,12 +139,12 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
-					<a name="opaqueapi" class="tsd-anchor"></a>
+					<a name="OpaqueApi" class="tsd-anchor"></a>
 					<h3>Opaque<wbr>Api</h3>
-					<div class="tsd-signature tsd-kind-icon">Opaque<wbr>Api&lt;Key, $PrivateValue&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>fromOpaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>opaque<span class="tsd-signature-symbol">: </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">; </span>isOpaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">; </span>toOpaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> }</span></div>
+					<div class="tsd-signature tsd-kind-icon">Opaque<wbr>Api&lt;Key, $PrivateValue&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>fromOpaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>isOpaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">; </span>toOpaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/9ba7d1a/src/index.ts#L25">index.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/25d205f/src/index.ts#L25">index.ts:25</a></li>
 						</ul>
 					</aside>
 					<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -160,99 +160,144 @@
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>from<wbr>Opaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>opaque<span class="tsd-signature-symbol">: </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">$PrivateValue</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>opaque<span class="tsd-signature-symbol">: </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">$PrivateValue</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
+								<h5>from<wbr>Opaque<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">from<wbr>Opaque<span class="tsd-signature-symbol">(</span>opaque<span class="tsd-signature-symbol">: </span><a href="modules.html#Opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">$PrivateValue</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/25d205f/src/index.ts#L70">index.ts:70</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Extract the private value from the opaque</p>
+											</div>
+											<p>Should usually not be shared outside of where the private type is used</p>
+											<dl class="tsd-comment-tags">
+												<dt>example</dt>
+												<dd><pre><code class="language-ts"><span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">$Car</span><span style="color: #000000"> = { </span><span style="color: #001080">brand</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> };</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">fromOpaque</span><span style="color: #000000"> } = </span><span style="color: #795E26">createOpaqueAPI</span><span style="color: #000000">&lt;</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">, </span><span style="color: #267F99">$Car</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">Car</span><span style="color: #000000"> = </span><span style="color: #267F99">ReturnType</span><span style="color: #000000">&lt;</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">toOpaque</span><span style="color: #000000">&gt;</span>
+
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">brand</span><span style="color: #000000">(</span><span style="color: #001080">car</span><span style="color: #000000">: </span><span style="color: #267F99">Car</span><span style="color: #000000">) {</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">$car</span><span style="color: #000000"> = </span><span style="color: #795E26">fromOpaque</span><span style="color: #000000">(</span><span style="color: #001080">car</span><span style="color: #000000">);</span>
+
+<span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #001080">$car</span><span style="color: #000000">.</span><span style="color: #001080">brand</span><span style="color: #000000">;</span>
+<span style="color: #000000">}</span>
+</code></pre>
+												</dd>
+											</dl>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>opaque: <a href="modules.html#Opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
 												<div class="tsd-comment tsd-typography">
-													<div class="lead">
-														<p>Extract the private value from the opaque</p>
-													</div>
-													<p>Should usually not be shared outside of where the private type is used</p>
+													<p>The opaque from which to extract the private value</p>
 												</div>
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>opaque: <a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
-														<div class="tsd-comment tsd-typography">
-															<div class="lead">
-																<p>The opaque from which to extract the private value</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">$PrivateValue</span></h4>
-												<p>The private value hidden in the opaque</p>
 											</li>
 										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">$PrivateValue</span></h4>
+										<p>The private value hidden in the opaque</p>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>is<wbr>Opaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
+								<h5>is<wbr>Opaque<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">is<wbr>Opaque<span class="tsd-signature-symbol">(</span>thing<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#Opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/25d205f/src/index.ts#L96">index.ts:96</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Test if something is an opaque</p>
+											</div>
+											<dl class="tsd-comment-tags">
+												<dt>example</dt>
+												<dd><pre><code class="language-ts"><span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">$Car</span><span style="color: #000000"> = { </span><span style="color: #001080">brand</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> };</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">CarAPI</span><span style="color: #000000"> = </span><span style="color: #795E26">createOpaqueAPI</span><span style="color: #000000">&lt;</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">, </span><span style="color: #267F99">$Car</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">Car</span><span style="color: #000000"> = </span><span style="color: #267F99">ReturnType</span><span style="color: #000000">&lt;</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">toOpaque</span><span style="color: #000000">&gt;</span>
+
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">$Bike</span><span style="color: #000000"> = { </span><span style="color: #001080">brand</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> };</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">BikeAPI</span><span style="color: #000000"> = </span><span style="color: #795E26">createOpaqueAPI</span><span style="color: #000000">&lt;</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">, </span><span style="color: #267F99">$Bike</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">Bike</span><span style="color: #000000"> = </span><span style="color: #267F99">ReturnType</span><span style="color: #000000">&lt;</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">toOpaque</span><span style="color: #000000">&gt;</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myCar</span><span style="color: #000000">: </span><span style="color: #267F99">Car</span><span style="color: #000000"> = </span><span style="color: #001080">CarAPI</span><span style="color: #000000">.</span><span style="color: #795E26">toOpaque</span><span style="color: #000000">({ </span><span style="color: #001080">brand:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Peugeot&#039;</span><span style="color: #000000"> });</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">myBike</span><span style="color: #000000">: </span><span style="color: #267F99">Bike</span><span style="color: #000000"> = </span><span style="color: #001080">BikeAPI</span><span style="color: #000000">.</span><span style="color: #795E26">toOpaque</span><span style="color: #000000">({ </span><span style="color: #001080">brand:</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;Peugeot&#039;</span><span style="color: #000000"> });</span>
+
+<span style="color: #001080">CarAPI</span><span style="color: #000000">.</span><span style="color: #795E26">isOpaque</span><span style="color: #000000">(</span><span style="color: #001080">myCar</span><span style="color: #000000">); </span><span style="color: #008000">// true</span>
+<span style="color: #001080">CarAPI</span><span style="color: #000000">.</span><span style="color: #795E26">isOpaque</span><span style="color: #000000">(</span><span style="color: #001080">myBike</span><span style="color: #000000">); </span><span style="color: #008000">// false</span>
+</code></pre>
+												</dd>
+											</dl>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>thing: <span class="tsd-signature-type">any</span></h5>
 												<div class="tsd-comment tsd-typography">
-													<div class="lead">
-														<p>Test if something is an opaque</p>
-													</div>
+													<p>Anything</p>
 												</div>
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>thing: <span class="tsd-signature-type">any</span></h5>
-														<div class="tsd-comment tsd-typography">
-															<div class="lead">
-																<p>Anything</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h4>
-												<p><code>true</code> if thing is an opaque with the corresponding key</p>
 											</li>
 										</ul>
+										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">thing</span><span class="tsd-signature-symbol"> is </span><a href="modules.html#Opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										<p><code>true</code> if thing is an opaque with the corresponding key</p>
 									</li>
 								</ul>
 							</li>
 							<li class="tsd-parameter">
-								<h5>to<wbr>Opaque<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h5>
-								<ul class="tsd-parameters">
-									<li class="tsd-parameter-signature">
-										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-type-literal">
-											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></li>
-										</ul>
-										<ul class="tsd-descriptions">
-											<li class="tsd-description">
+								<h5>to<wbr>Opaque<span class="tsd-signature-symbol">: </span>function</h5>
+								<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-type-literal">
+									<li class="tsd-signature tsd-kind-icon">to<wbr>Opaque<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#Opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></li>
+								</ul>
+								<ul class="tsd-descriptions">
+									<li class="tsd-description">
+										<aside class="tsd-sources">
+											<ul>
+												<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/25d205f/src/index.ts#L45">index.ts:45</a></li>
+											</ul>
+										</aside>
+										<div class="tsd-comment tsd-typography">
+											<div class="lead">
+												<p>Encapsulate a private, non-opaque, value in the opaque</p>
+											</div>
+											<dl class="tsd-comment-tags">
+												<dt>example</dt>
+												<dd><pre><code class="language-ts"><span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">$Car</span><span style="color: #000000"> = { </span><span style="color: #001080">brand</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000"> };</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">toOpaque</span><span style="color: #000000"> } = </span><span style="color: #795E26">createOpaqueAPI</span><span style="color: #000000">&lt;</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">, </span><span style="color: #267F99">$Car</span><span style="color: #000000">&gt;(</span><span style="color: #A31515">&#039;CAR&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">type</span><span style="color: #000000"> </span><span style="color: #267F99">Car</span><span style="color: #000000"> = </span><span style="color: #267F99">ReturnType</span><span style="color: #000000">&lt;</span><span style="color: #0000FF">typeof</span><span style="color: #000000"> </span><span style="color: #001080">toOpaque</span><span style="color: #000000">&gt;</span>
+
+<span style="color: #0000FF">function</span><span style="color: #000000"> </span><span style="color: #795E26">createCar</span><span style="color: #000000">(</span><span style="color: #001080">brand</span><span style="color: #000000">: </span><span style="color: #267F99">string</span><span style="color: #000000">): </span><span style="color: #267F99">Car</span><span style="color: #000000"> {</span>
+<span style="color: #AF00DB">return</span><span style="color: #000000"> </span><span style="color: #795E26">toOpaque</span><span style="color: #000000">({ </span><span style="color: #001080">brand</span><span style="color: #000000"> });</span>
+<span style="color: #000000">}</span>
+</code></pre>
+												</dd>
+											</dl>
+										</div>
+										<h4 class="tsd-parameters-title">Parameters</h4>
+										<ul class="tsd-parameters">
+											<li>
+												<h5>value: <span class="tsd-signature-type">$PrivateValue</span></h5>
 												<div class="tsd-comment tsd-typography">
-													<div class="lead">
-														<p>Encapsulate a private, non-opaque, value in the opaque</p>
-													</div>
+													<p>The value to hide in the opaque</p>
 												</div>
-												<h4 class="tsd-parameters-title">Parameters</h4>
-												<ul class="tsd-parameters">
-													<li>
-														<h5>value: <span class="tsd-signature-type">$PrivateValue</span></h5>
-														<div class="tsd-comment tsd-typography">
-															<div class="lead">
-																<p>The value to hide in the opaque</p>
-															</div>
-														</div>
-													</li>
-												</ul>
-												<h4 class="tsd-returns-title">Returns <a href="modules.html#opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h4>
-												<p>The opaque</p>
 											</li>
 										</ul>
+										<h4 class="tsd-returns-title">Returns <a href="modules.html#Opaque" class="tsd-signature-type" data-tsd-kind="Type alias">Opaque</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">&gt;</span></h4>
+										<p>The opaque</p>
 									</li>
 								</ul>
 							</li>
@@ -263,16 +308,16 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
-					<a name="createopaqueapi" class="tsd-anchor"></a>
+					<a name="createOpaqueAPI" class="tsd-anchor"></a>
 					<h3>create<wbr>OpaqueAPI</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
-						<li class="tsd-signature tsd-kind-icon">create<wbr>OpaqueAPI&lt;Key, $PrivateValue&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#opaqueapi" class="tsd-signature-type" data-tsd-kind="Type alias">OpaqueApi</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">create<wbr>OpaqueAPI&lt;Key, $PrivateValue&gt;<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="modules.html#OpaqueApi" class="tsd-signature-type" data-tsd-kind="Type alias">OpaqueApi</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/9ba7d1a/src/index.ts#L121">index.ts:121</a></li>
+									<li>Defined in <a href="https://github.com/fp51/opaque-type-library/blob/25d205f/src/index.ts#L121">index.ts:121</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -318,7 +363,7 @@
 									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="modules.html#opaqueapi" class="tsd-signature-type" data-tsd-kind="Type alias">OpaqueApi</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="modules.html#OpaqueApi" class="tsd-signature-type" data-tsd-kind="Type alias">OpaqueApi</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Key</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">$PrivateValue</span><span class="tsd-signature-symbol">&gt;</span></h4>
 							<p>API for Opaque<Key></p>
 						</li>
 					</ul>
@@ -336,13 +381,13 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="modules.html#opaque" class="tsd-kind-icon">Opaque</a>
+						<a href="modules.html#Opaque" class="tsd-kind-icon">Opaque</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
-						<a href="modules.html#opaqueapi" class="tsd-kind-icon">Opaque<wbr>Api</a>
+						<a href="modules.html#OpaqueApi" class="tsd-kind-icon">Opaque<wbr>Api</a>
 					</li>
 					<li class=" tsd-kind-function tsd-has-type-parameter">
-						<a href="modules.html#createopaqueapi" class="tsd-kind-icon">create<wbr>OpaqueAPI</a>
+						<a href="modules.html#createOpaqueAPI" class="tsd-kind-icon">create<wbr>OpaqueAPI</a>
 					</li>
 				</ul>
 			</nav>
